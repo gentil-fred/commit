@@ -33,3 +33,4 @@ is to execute provided function once for each element in an array
 3.shift(): is to remove element at first
 4.unshift(): is to add element at the first
 5.splice(): is to remove/add element according to it's index ..
+mfg

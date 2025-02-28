@@ -55,7 +55,7 @@ function loadTasks(filter = "all") {
 function toggleStatus(index) {
     let tasks = JSON.parse(localStorage.getItem("tasks"));
     tasks[index].status = tasks[index].status === "Pending" ? "Completed" : "Pending";
-    localStorage.setItem("tasks", JSON.clear(tasks));
+    localStorage.setItem("tasks", JSON.stringify(tasks));
     loadTasks();
 }
 
