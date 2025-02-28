@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Management_system</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Task Management</h1>
+        <div>
+            <textarea id="taskDescription" placeholder="Enter task description..."></textarea>
+            <span id="charCount">0/200</span>
+            <select id="taskStatus">
+                <option value="Pending">Pending</option>
+                <option value="Completed">Completed</option>
+            </select>
+            <button id="addTaskBtn">Add Task</button>
+            <p id="errorMessage" class="error"></p>
+        </div>
+        <div class="filters">
+            <button onclick="filterTasks('all')">All</button>
+            <button onclick="filterTasks('Pending')">Pending</button>
+            <button onclick="filterTasks('Completed')">Completed</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
